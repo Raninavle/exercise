@@ -1,12 +1,17 @@
-# sort the list according to the second element in sublist ?
+# sum of all prime number betn 1 to n :
 
-data=[[0,1],[0,9,2],[2,3,4,7],[9,11,12]]
-size=len(data)
-for j in range(1,size):
-    for i in range(0,size-j):
-        if(data[i][1]>data[i+1][1]):
-            data[i],data[i+1]=data[i+1],data[i]
-print(data)
+def prime(n):
+    sum=0
+    for i in range(2,n+1):
+        for j in range(2,i):
+            if(i%j==0):
+              break
+        else:
+            print(i)
+            sum+=i 
+    return sum
 
-x=sorted(data)
-print(x)
+
+x=int(input("Enter a number:"))
+result=prime(x)
+print("sum:",result)

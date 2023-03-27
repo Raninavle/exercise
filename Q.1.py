@@ -1,16 +1,16 @@
-# python program to put even and odd element of a list into two different list?
-list=[]
-n=int(input("Enter a length of list  :"))
-for i in range(1,n+1):
-    e=int(input("Enter a element :"))
-    list.append(e)
-print(list)
-even=[]
-odd=[]
-for i in list:
-    if(i%2==0):
-        even.append(i)
-    else:
-        odd.append(i)
-print("Even number list:",even)
-print("Odd number list:",odd)
+# sum of following series:
+#   1!+2!+3!+4!+...n
+
+def fact(n):
+    f=1
+    sum=0
+    for i in range(1,n+1):
+        f=f*i
+        sum+=f
+    return sum
+
+x=int(input("Enter a number:"))
+result=fact(x)
+print(result)
+
+
