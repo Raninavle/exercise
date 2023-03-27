@@ -1,4 +1,9 @@
-c=int(input("Enter temperature into celsius:"))
-#c/5=(f-32)/9
-f=9*c/5+32
-print("temperature in fahrenheit:",f)
+#python program to find union of two list?
+
+
+
+list1=[10,20,30,60,50,40]
+list2=[11,22,30,40,50,66]
+print(list1+list2)
+
+
