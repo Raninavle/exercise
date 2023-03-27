@@ -1,17 +1,11 @@
-# sum of all prime number betn 1 to n :
+def rev(n,r):
+    if(n==0):
+        return r
+    else:
+        r=r*10+n%10
+        n//=10
+        return rev(n,r)
 
-def prime(n):
-    sum=0
-    for i in range(2,n+1):
-        for j in range(2,i):
-            if(i%j==0):
-              break
-        else:
-            print(i)
-            sum+=i 
-    return sum
-
-
-x=int(input("Enter a number:"))
-result=prime(x)
-print("sum:",result)
+num=int(input("Enter a number:"))
+result=rev(num,0)
+print("result:",result)

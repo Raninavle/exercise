@@ -1,11 +1,24 @@
-# sum of all number betn 1 to n :
 
-def sum(n):
-    s=0
-    for i in range(1,n+1):
-        s+=i
-    return s
+# write a program to check given number is armstrong or not:
 
-x=int(input("Enter a number:"))
-result=sum(x)
-print(result)
+def arm(t,s):
+    if(t==0):
+        if(num==s):
+            print("number is armstrong")
+            return s
+        else:
+            print("number is not armstrong")
+            return s
+    else:
+        k=t%10
+        s+=k**v
+        t//=10
+        return arm(t,s)
+        
+num=int(input("Enter a number:"))
+v=len(str(num))
+result=arm(num,0)
+
+
+            
+
