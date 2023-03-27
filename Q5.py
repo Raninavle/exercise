@@ -1,13 +1,25 @@
-# python program to sort a list according to the length of the element within the sublist?
+x=input("Are You Female(Y/N):")
+age=int(input("Enter Your Age:"))
+if(x =="Y" and age>=18):
+    print("You are Eligible for Marriage.")
+elif(x =="Y"):
+    print("Not Eligible for marriage.")
+elif(age>=18):
+    print("Not Eligible for marriage.")
+else:
+    print(" Not Eligible for Marriage.")
 
-list=[[1,0,2],[11,56,1,4],[0,2,13,89,102,77],[7,6,19,98,23]]
-size=len(list)
-for i in range(1,size):
-    for j in range(0,size-1):
-        if(len(list[j])>len(list[j+1])):
-            list[j],list[j+1]=list[j+1],list[j]
-print(list)
+y =input("Are You Male(Y/N):")  
+age=int(input("Enter Your Age:"))
+if(y=="Y" and age>=21):
+     print("You are Eligible for Marriage." ) 
+elif(y =="Y"):
+    print("Not Eligible for marriage.")
+elif(age>=21):
+    print("Not Eligible for marriage.")
+else:
+    print(" Not Eligible for Marriage.")
+    
 
-#or
-l=sorted(list,key=len)
-print(l)
+
+

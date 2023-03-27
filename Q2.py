@@ -1,4 +1,14 @@
-x=int(input("Enter the length of rectangle:"))
-y=int(input("Enter the breadth of rectangle:"))
-area=x*y
-print("Area of rectangle:",area)
+x=input("Enter the Userid:")
+y=input("Enter the passward: ")
+Userid=("raninavle147@gmail.com")
+Passward=("Rani@123")
+if(x==Userid and y==Passward):
+    print("Successfully login")
+elif(x==Userid):
+    print("Invalid Passward")
+elif(y==Passward):
+    print("Invalid Userid")   
+else:
+    print("Invalid Userid and Passward")
+
+
